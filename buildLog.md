@@ -91,4 +91,25 @@ contains:
   -- This code is not my own, fascinating to see what is possible though! Use your mouse to animate the blobs!
 
 - Personal Projects
-  -- One of my big web dev ambitions, is to build my own e-com site, here's a sneak peak of the build so far.
+  -- One of my big web dev ambitions, build my own e-commerce site, here's a sneak peak of the build so far.
+
+## Contact Me
+
+## Footer
+
+## Wednesday - /20/09/2023
+
+-- Product cards are coming together, the images (resized) need squooshing (webp) and replacing in the portfolio folder
+
+-- Create sections for:
+-- TailwindCSS
+-- Sites
+-- Components
+-- HTML CSS JS
+-- Jonas
+-- FrontEnd Mentor
+-- FreeCode Camp
+-- p5.js
+-- Personal Projects
+
+-- Would be nice to have a "see more" button, which renders the remaining hidden projects in the sections (could use JS to remove a hidden class...)

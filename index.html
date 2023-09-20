@@ -13,18 +13,34 @@
     />
 
     <title>Dean Howe Web Dev Portfolio Site</title>
-    <link rel="icon" type="image/x-icon" href="/assets/dhd-favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/dhd-display-favicon-32x32.png"
+    />
   </head>
   <body
     class="bg-gradient-to-br from-slate-200 to-slate-300 relative text-slate-700"
   >
-    <header>
-      <nav class="p-6 z-10">
+    <header
+      class="fixed top-0 left-0 right-0 z-10 bg-gradient-to-b from-slate-200 from-60%"
+    >
+      <nav class="hidden md:flex items-center justify-center p-8 mb-8">
+        <!-- DHD LOGO -->
+        <div
+          class="w-12 h-12 md:w-24 md:h-24 rounded-full bg-slate-50 flex items-center justify-center absolute shadow-md top-4 left-5"
+        >
+          <h1 class="md:text-5xl font-display">DHD</h1>
+        </div>
+        <!-- Desktop Nav Menu -->
         <ul
-          class="flex justify-center gap-6 md:gap-12 uppercase text-sm md:text-lg tracking-widest font-light text-slate-600"
+          class="flex justify-center gap-6 md:gap-12 uppercase text-sm md:text-lg tracking-widest font-semibold text-slate-600"
         >
           <li>
             <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
           </li>
           <li>
             <a href="#projects">Projects</a>
@@ -34,7 +50,7 @@
           </li>
         </ul>
       </nav>
-      <div class="mx-auto w-8/12 border-b border-slate-400 shadow-sm"></div>
+      <!-- <div class="mx-auto w-8/12 border-b-2 border-slate-700 shadow-sm"></div> -->
       <div>
         <a
           href="#contact"
@@ -48,18 +64,17 @@
     <main>
       <section
         id="hero"
-        class="h-screen flex items-center justify-center relative border-2 border-red-400"
+        class="min-h-screen flex items-center justify-center relative"
       >
-        <div
-          class="flex flex-col items-center justify-center border-4 border-red-400"
-        >
+        <div class="flex flex-col items-center justify-center">
           <h1
-            class="text-4xl text-slate-700 mb-1 -mt-20 border-4 border-red-200"
+            class="text-6xl md:text-8xl text-slate-700 mb-1 -mt-20 tracking-tight md:tracking-normal font-semibold font-display"
           >
             Dean Howe
           </h1>
+          <!-- <div class="w-10/12 border-b-2 border-slate-700 -mt-1 mb-3"></div> -->
           <h4
-            class="uppercase text-sm tracking-widest font-light text-slate-600"
+            class="uppercase text-2xl md:text-4xl tracking-widest font-light text-slate-600"
           >
             Web Developer
           </h4>
@@ -110,30 +125,168 @@
       </section>
       <section
         id="projects"
-        class="h-screen flex items-center justify-center relative"
+        class="min-h-screen flex items-center justify-center relative"
       >
         <!-- Background Container -->
         <div class="flex w-full flex-col justify-center items-center">
           <!-- Project Cards Container -->
           <div
-            class="p-12 border-2 border-red-200 grid grid-cols-1 gap-4 justify-center items-center md:max-w-1/2 sm:grid-cols-2 md:grid-cols-4 px-8 py-12 md:p-12 flex-stretch"
+            class="p-12 border-2 border-red-200 grid grid-cols-1 gap-4 justify-center items-stretch md:max-w-1/2 sm:grid-cols-2 md:grid-cols-3 px-8 py-12 md:p-12 flex-stretch"
           >
             <!-- Project Card 1 -->
-            <div
-              class="border-2 border-green-300 flex flex-col items-star justify-center"
+            <a
+              href="#projects"
+              class="border-2 border-green-300 flex flex-col items-center justify-start"
             >
-              <!-- Project Desc -->
-              <h3>Tailwind Build</h3>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                libero maiores repudiandae earum explicabo rem, corrupti,
-                consequatur quas nisi qui facilis sint?
-              </p>
               <!-- Project Thumbnail -->
-              <img src="" class="w-full h-full" alt="" />
-            </div>
-            <!-- Project Card 1 -->
-            <div class="border-2 border-green-300"></div>
+              <div class="">
+                <img
+                  src="assets/portfolio/bookmark.webp"
+                  class="w-full"
+                  alt="bookmark website build project thumbnail"
+                />
+              </div>
+              <!-- Project Desc -->
+              <div class="p-3">
+                <h3 class="font-display text-2xl tracking-wider -mb-1">
+                  Bookmark App
+                </h3>
+                <h4
+                  class="uppercase text-sm tracking-widest font-light text-slate-600 mb-1"
+                >
+                  TailwindCSS
+                </h4>
+                <p class="tracking-wider leading-7">
+                  A mock-up build of a fictional start-up. Check out the
+                  interactive features panel, using a little bit of JavaScript
+                  magic.
+                </p>
+              </div>
+            </a>
+            <!-- Project Card 2 -->
+            <a
+              href="#projects"
+              class="border-2 border-green-300 flex flex-col items-center justify-start"
+            >
+              <!-- Project Thumbnail -->
+              <div class="">
+                <img
+                  src="assets/portfolio/fylo.webp"
+                  class="w-full"
+                  alt="fylo website build project thumbnail"
+                />
+              </div>
+              <!-- Project Desc -->
+              <div class="p-3">
+                <h3 class="font-display text-2xl tracking-wider -mb-1">
+                  Fylo App
+                </h3>
+                <h4
+                  class="uppercase text-sm tracking-widest font-light text-slate-600 mb-1"
+                >
+                  TailwindCSS
+                </h4>
+                <p class="tracking-wider leading-7">
+                  This page has a Light and Dark Mode button, for switching the
+                  theme as and when the user may require.
+                </p>
+              </div>
+            </a>
+            <!-- Project Card 3 -->
+            <a
+              href="#projects"
+              class="border-2 border-green-300 flex flex-col items-center justify-start"
+            >
+              <!-- Project Thumbnail -->
+              <div class="">
+                <img
+                  src="assets/portfolio/loopstudios.webp"
+                  class="w-full"
+                  alt="loopstudios website build project thumbnail"
+                />
+              </div>
+              <!-- Project Desc -->
+              <div class="p-3">
+                <h3 class="font-display text-2xl tracking-wider -mb-1">
+                  Loopstudios App
+                </h3>
+                <h4
+                  class="uppercase text-sm tracking-widest font-light text-slate-600 mb-1"
+                >
+                  TailwindCSS
+                </h4>
+                <p class="tracking-wider leading-7">
+                  Striking and bold, fully responsive and interactive. I
+                  particularly like the hover animation effect on the product
+                  items.
+                </p>
+              </div>
+            </a>
+            <!-- Project Card 4 -->
+            <a
+              href="#projects"
+              class="border-2 border-green-300 flex flex-col items-center justify-start"
+            >
+              <!-- Project Thumbnail -->
+              <div class="">
+                <img
+                  src="assets/portfolio/jonas-omnifood.webp"
+                  class="w-full"
+                  alt="omnifood website build project thumbnail"
+                />
+              </div>
+              <!-- Project Desc -->
+              <div class="p-3">
+                <h3 class="font-display text-2xl tracking-wider -mb-1">
+                  Omnifood App
+                </h3>
+                <h4
+                  class="uppercase text-sm tracking-widest font-light text-slate-600 mb-1"
+                >
+                  HTML - CSS - JS
+                </h4>
+                <p class="tracking-wider leading-7">
+                  This is the biggest project I have built to date, with over
+                  1000 lines of CSS. It was a great learning experience. It made
+                  me aware of how useful a framework could be, in reducing the
+                  volume of code and the merit of using design systems. This has
+                  inspired me to focus on building in TailwindCSS.
+                </p>
+              </div>
+            </a>
+            <!-- Project Card 5 -->
+            <a
+              href="#projects"
+              class="border-2 border-green-300 flex flex-col items-center justify-start"
+            >
+              <!-- Project Thumbnail -->
+              <div class="">
+                <img
+                  src="assets/portfolio/shortly.webp"
+                  class="w-full"
+                  alt="omnifood website build project thumbnail"
+                />
+              </div>
+              <!-- Project Desc -->
+              <div class="p-3">
+                <h3 class="font-display text-2xl tracking-wider -mb-1">
+                  Omnifood App
+                </h3>
+                <h4
+                  class="uppercase text-sm tracking-widest font-light text-slate-600 mb-1"
+                >
+                  HTML - CSS - JS
+                </h4>
+                <p class="tracking-wider leading-7">
+                  This is the biggest project I have built to date, with over
+                  1000 lines of CSS. It was a great learning experience. It made
+                  me aware of how useful a framework could be, in reducing the
+                  volume of code and the merit of using design systems. This has
+                  inspired me to focus on building in TailwindCSS.
+                </p>
+              </div>
+            </a>
+
             <!-- Project Card 1 -->
             <div class="border-2 border-green-300"></div>
             <!-- Project Card 1 -->
@@ -177,7 +330,7 @@
       </section>
       <section
         id="contact"
-        class="h-screen flex items-center justify-center relative"
+        class="min-h-screen flex items-center justify-center relative"
       >
         <!-- Background Container -->
         <div class="flex w-full flex-col justify-center items-center">
