@@ -114,3 +114,14 @@ contains:
 -- Personal Projects
 
 -- Would be nice to have a "see more" button, which renders the remaining hidden projects in the sections (could use JS to remove a hidden class...)
+
+## Thursday - 21/09/23
+
+-- Portfolio sections roughed out -- 1300
+
+-- Each site needs pushing to github
+-- Each site needs hosting on netlify.app
+-- Clean up all the code for github
+
+-- Build mobile Nav
+-- Improve Contact section with fonts
