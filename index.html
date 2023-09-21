@@ -22,6 +22,7 @@
   <body
     class="bg-gradient-to-br from-slate-200 to-slate-300 relative text-slate-700"
   >
+    <!-- Header / Nav -->
     <header
       class="fixed top-0 left-0 right-0 z-10 bg-gradient-to-b from-slate-200 from-60%"
     >
@@ -62,6 +63,7 @@
       </div>
     </header>
     <main>
+      <!-- Hero Section -->
       <section
         id="hero"
         class="min-h-screen flex items-center justify-center relative"
@@ -123,15 +125,28 @@
           </div> -->
         </div>
       </section>
+
+      <!-- Portfolio Section  -->
       <section
         id="projects"
-        class="min-h-screen flex items-center justify-center relative"
+        class="min-h-screen flex flex-col items-center justify-center relative border-4 border-blue-200"
       >
-        <!-- Background Container -->
-        <div class="flex w-full flex-col justify-center items-center">
+        <!-- TailwindCSS Background Container -->
+        <div
+          class="flex w-full flex-col justify-center items-center mb-12 border-2 border-blue-300"
+        >
           <!-- Project Cards Container -->
+          <div class="container pl-2">
+            <h2 class="font-display text-4xl md:text-6xl">Portfolio</h2>
+            <h4
+              class="uppercase text-lg tracking-widest font-light text-slate-600 mb-1"
+            >
+              TailwindCSS
+            </h4>
+          </div>
+          <!-- Grid Container -->
           <div
-            class="p-12 border-2 border-red-200 grid grid-cols-1 gap-4 justify-center items-stretch md:max-w-1/2 sm:grid-cols-2 md:grid-cols-3 px-8 py-12 md:p-12 flex-stretch"
+            class="p-12 border-2 border-red-200 grid grid-cols-1 gap-4 justify-center items-stretch md:max-w-1/2 sm:grid-cols-2 md:grid-cols-3 px-8 py-12 md:p-12 flex-stretch relative"
           >
             <!-- Project Card 1 -->
             <a
@@ -222,7 +237,180 @@
                 </p>
               </div>
             </a>
+
             <!-- Project Card 4 -->
+            <a
+              href="#projects"
+              class="border-2 border-green-300 flex flex-col items-center justify-start"
+            >
+              <!-- Project Thumbnail -->
+              <div class="">
+                <img
+                  src="assets/portfolio/shortly.webp"
+                  class="w-full"
+                  alt="omnifood website build project thumbnail"
+                />
+              </div>
+              <!-- Project Desc -->
+              <div class="p-3">
+                <h3 class="font-display text-2xl tracking-wider -mb-1">
+                  Shortly App
+                </h3>
+                <h4
+                  class="uppercase text-sm tracking-widest font-light text-slate-600 mb-1"
+                >
+                  TailwindCSS
+                </h4>
+                <p class="tracking-wider leading-7">
+                  Responsive design with modal mobile navigation menu, built in
+                  TailwindCSS. I really like the clean layout, which looks great
+                  through a wide range of screen sizes.
+                </p>
+              </div>
+            </a>
+
+            <!-- Project Card 5 -->
+            <a
+              href="#projects"
+              class="border-2 border-green-300 flex flex-col items-center justify-start"
+            >
+              <!-- Project Thumbnail -->
+              <div class="">
+                <img
+                  src="assets/portfolio/tailwind-gallery.webp"
+                  class="w-full"
+                  alt="tailwind website build project thumbnail"
+                />
+              </div>
+              <!-- Project Desc -->
+              <div class="p-3">
+                <h3 class="font-display text-2xl tracking-wider -mb-1">
+                  Image Gallery
+                </h3>
+                <h4
+                  class="uppercase text-sm tracking-widest font-light text-slate-600 mb-1"
+                >
+                  TailwindCSS
+                </h4>
+                <p class="tracking-wider leading-7">
+                  Built using grid, with a smart hover state for the links and
+                  images.
+                </p>
+              </div>
+            </a>
+
+            <!-- Project Card 6 -->
+            <a
+              href="#projects"
+              class="border-2 border-green-300 flex flex-col items-center justify-start"
+            >
+              <!-- Project Thumbnail -->
+              <div class="">
+                <img
+                  src="assets/portfolio/tailwind-product-card.webp"
+                  class="w-full"
+                  alt="tailwind website build project thumbnail"
+                />
+              </div>
+              <!-- Project Desc -->
+              <div class="p-3">
+                <h3 class="font-display text-2xl tracking-wider -mb-1">
+                  Product Card
+                </h3>
+                <h4
+                  class="uppercase text-sm tracking-widest font-light text-slate-600 mb-1"
+                >
+                  TailwindCSS
+                </h4>
+                <p class="tracking-wider leading-7">
+                  Reusable responsive product card with tailwind animation
+                </p>
+              </div>
+            </a>
+
+            <!-- Project Card 7 -->
+            <a
+              href="#projects"
+              class="border-2 border-green-300 flex flex-col items-center justify-start"
+            >
+              <!-- Project Thumbnail -->
+              <div class="">
+                <img
+                  src="assets/portfolio/tailwind-triple-product-cards.webp"
+                  class="w-full"
+                  alt="tailwind website build project thumbnail"
+                />
+              </div>
+              <!-- Project Desc -->
+              <div class="p-3">
+                <h3 class="font-display text-2xl tracking-wider -mb-1">
+                  Tripe Product Cards
+                </h3>
+                <h4
+                  class="uppercase text-sm tracking-widest font-light text-slate-600 mb-1"
+                >
+                  TailwindCSS
+                </h4>
+                <p class="tracking-wider leading-7">
+                  Responsive product cards layout for mobile and desktop
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Background -->
+          <!-- <div class="absolute -z-10 w-full overflow-hidden">
+            <div
+              class="flex flex-col gap-8 items-center justify-start opacity-20 tracking-widest overflow-y-hidden"
+            >
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+            </div>
+          </div> -->
+        </div>
+        <!-- HTML CSS JS Background Container -->
+        <div
+          class="flex w-full flex-col justify-center items-center mb-12 border-2 border-blue-300"
+        >
+          <!-- Project Cards Container -->
+          <div class="container pl-2">
+            <h2 class="font-display text-4xl md:text-6xl">Portfolio</h2>
+            <h4
+              class="uppercase text-lg tracking-widest font-light text-slate-600 mb-1"
+            >
+              HTML CSS JS
+            </h4>
+          </div>
+          <div
+            class="p-12 border-2 border-red-200 grid grid-cols-1 gap-4 justify-center items-stretch md:max-w-1/2 sm:grid-cols-2 md:grid-cols-3 px-8 py-12 md:p-12 flex-stretch relative"
+          >
+            <!-- <div class="absolute top-0 left-0 -z-10">
+              <h2 class="font-display text-8xl">Portfolio</h2>
+            </div> -->
+            <!-- Project Card 1 -->
             <a
               href="#projects"
               class="border-2 border-green-300 flex flex-col items-center justify-start"
@@ -243,7 +431,7 @@
                 <h4
                   class="uppercase text-sm tracking-widest font-light text-slate-600 mb-1"
                 >
-                  HTML - CSS - JS
+                  HTML CSS JS
                 </h4>
                 <p class="tracking-wider leading-7">
                   This is the biggest project I have built to date, with over
@@ -251,6 +439,95 @@
                   me aware of how useful a framework could be, in reducing the
                   volume of code and the merit of using design systems. This has
                   inspired me to focus on building in TailwindCSS.
+                </p>
+              </div>
+            </a>
+            <!-- Project Card 2 -->
+            <a
+              href="#projects"
+              class="border-2 border-green-300 flex flex-col items-center justify-start"
+            >
+              <!-- Project Thumbnail -->
+              <div class="">
+                <img
+                  src="assets/portfolio/jonas-furniture-landing.webp"
+                  class="w-full"
+                  alt="furniture shop website build project thumbnail"
+                />
+              </div>
+              <!-- Project Desc -->
+              <div class="p-3">
+                <h3 class="font-display text-2xl tracking-wider -mb-1">
+                  Furniture Shop Landing Page
+                </h3>
+                <h4
+                  class="uppercase text-sm tracking-widest font-light text-slate-600 mb-1"
+                >
+                  HTML CSS JS
+                </h4>
+                <p class="tracking-wider leading-7">
+                  Looking into the finer details of building a webpage that
+                  matches the client's needs. I like the clean layout and
+                  contemporary feel.
+                </p>
+              </div>
+            </a>
+            <!-- Project Card 3 -->
+            <a
+              href="#projects"
+              class="border-2 border-green-300 flex flex-col items-center justify-start"
+            >
+              <!-- Project Thumbnail -->
+              <div class="">
+                <img
+                  src="assets/portfolio/jonas-html-page.webp"
+                  class="w-full"
+                  alt="HTML CSS website build project thumbnail"
+                />
+              </div>
+              <!-- Project Desc -->
+              <div class="p-3">
+                <h3 class="font-display text-2xl tracking-wider -mb-1">
+                  Code Magazine
+                </h3>
+                <h4
+                  class="uppercase text-sm tracking-widest font-light text-slate-600 mb-1"
+                >
+                  HTML CSS JS
+                </h4>
+                <p class="tracking-wider leading-7">
+                  Learning the nuts and bolts of CSS layouts and HTML elements,
+                  although this design looks dated to todays standards, I like
+                  how it emulates the blocky aesthetics of webpages of old!
+                </p>
+              </div>
+            </a>
+            <!-- Project Card 4 -->
+            <a
+              href="#projects"
+              class="border-2 border-green-300 flex flex-col items-center justify-start"
+            >
+              <!-- Project Thumbnail -->
+              <div class="">
+                <img
+                  src="assets/portfolio/jonas-number-game.webp"
+                  class="w-full"
+                  alt="number game website build project thumbnail"
+                />
+              </div>
+              <!-- Project Desc -->
+              <div class="p-3">
+                <h3 class="font-display text-2xl tracking-wider -mb-1">
+                  Guess the Number Game
+                </h3>
+                <h4
+                  class="uppercase text-sm tracking-widest font-light text-slate-600 mb-1"
+                >
+                  HTML - CSS - JS
+                </h4>
+                <p class="tracking-wider leading-7">
+                  Writing the game logic in JavaScript and manipulating the DOM
+                  were my favourite parts in building this project.
                 </p>
               </div>
             </a>
@@ -262,15 +539,15 @@
               <!-- Project Thumbnail -->
               <div class="">
                 <img
-                  src="assets/portfolio/shortly.webp"
+                  src="assets/portfolio/fm-meet-landing.webp"
                   class="w-full"
-                  alt="omnifood website build project thumbnail"
+                  alt="frontend mentor challenge meet website build project thumbnail"
                 />
               </div>
               <!-- Project Desc -->
               <div class="p-3">
                 <h3 class="font-display text-2xl tracking-wider -mb-1">
-                  Omnifood App
+                  Meet Landing Page
                 </h3>
                 <h4
                   class="uppercase text-sm tracking-widest font-light text-slate-600 mb-1"
@@ -278,19 +555,310 @@
                   HTML - CSS - JS
                 </h4>
                 <p class="tracking-wider leading-7">
-                  This is the biggest project I have built to date, with over
-                  1000 lines of CSS. It was a great learning experience. It made
-                  me aware of how useful a framework could be, in reducing the
-                  volume of code and the merit of using design systems. This has
-                  inspired me to focus on building in TailwindCSS.
+                  FrontEnd Mentor Challenge - Building more complex layouts,
+                  adapting to media queries and expanding skills and techniques.
+                </p>
+              </div>
+            </a>
+            <!-- Project Card 6 -->
+            <a
+              href="#projects"
+              class="border-2 border-green-300 flex flex-col items-center justify-start"
+            >
+              <!-- Project Thumbnail -->
+              <div class="">
+                <img
+                  src="assets/portfolio/fm-grid-comp.webp"
+                  class="w-full"
+                  alt="frontend mentor challenge grid component website build project thumbnail"
+                />
+              </div>
+              <!-- Project Desc -->
+              <div class="p-3">
+                <h3 class="font-display text-2xl tracking-wider -mb-1">
+                  Meet Landing Page
+                </h3>
+                <h4
+                  class="uppercase text-sm tracking-widest font-light text-slate-600 mb-1"
+                >
+                  HTML - CSS - JS
+                </h4>
+                <p class="tracking-wider leading-7">
+                  FrontEnd Mentor Challenge - Building more complex layouts,
+                  adapting to media queries and expanding skills and techniques.
                 </p>
               </div>
             </a>
 
+            <!-- Project Card 7 -->
+            <a
+              href="#projects"
+              class="border-2 border-green-300 flex flex-col items-center justify-start"
+            >
+              <!-- Project Thumbnail -->
+              <div class="">
+                <img
+                  src="assets/portfolio/fcc-form.webp"
+                  class="w-full"
+                  alt="freecode camp mentor challenge grid component website build project thumbnail"
+                />
+              </div>
+              <!-- Project Desc -->
+              <div class="p-3">
+                <h3 class="font-display text-2xl tracking-wider -mb-1">
+                  HTML Forms page
+                </h3>
+                <h4
+                  class="uppercase text-sm tracking-widest font-light text-slate-600 mb-1"
+                >
+                  HTML - CSS - JS
+                </h4>
+                <p class="tracking-wider leading-7">
+                  Getting to grips with forms, one of the key ways for websites
+                  to gather information and data from their users in an
+                  interactive way. I enjoyed learning how these forms work
+                  behind the scenes.
+                </p>
+              </div>
+            </a>
+
+            <!-- Project Card 8 -->
+            <a
+              href="#projects"
+              class="border-2 border-green-300 flex flex-col items-center justify-start"
+            >
+              <!-- Project Thumbnail -->
+              <div class="">
+                <img
+                  src="assets/portfolio/fcc-nutri-card.webp"
+                  class="w-full"
+                  alt="freecode camp mentor challenge grid component website build project thumbnail"
+                />
+              </div>
+              <!-- Project Desc -->
+              <div class="p-3">
+                <h3 class="font-display text-2xl tracking-wider -mb-1">
+                  Nutrition Card
+                </h3>
+                <h4
+                  class="uppercase text-sm tracking-widest font-light text-slate-600 mb-1"
+                >
+                  HTML - CSS - JS
+                </h4>
+                <p class="tracking-wider leading-7">
+                  I really enjoyed this project, learning how to emulate designs
+                  that I am familiar with in print for the web. The strong
+                  graphic qualities of the layout, type and monotone palette are
+                  smart!
+                </p>
+              </div>
+            </a>
+
+            <!-- Project Card 9 -->
+            <a
+              href="#projects"
+              class="border-2 border-green-300 flex flex-col items-center justify-start"
+            >
+              <!-- Project Thumbnail -->
+              <div class="">
+                <img
+                  src="assets/portfolio/fcc-accounts.webp"
+                  class="w-full"
+                  alt="freecode camp mentor challenge grid component website build project thumbnail"
+                />
+              </div>
+              <!-- Project Desc -->
+              <div class="p-3">
+                <h3 class="font-display text-2xl tracking-wider -mb-1">
+                  Accounts Page
+                </h3>
+                <h4
+                  class="uppercase text-sm tracking-widest font-light text-slate-600 mb-1"
+                >
+                  HTML - CSS - JS
+                </h4>
+                <p class="tracking-wider leading-7">
+                  Not used so much these days, tables were one of the ways web
+                  developers laid out pages in the past, no CSS Grid or Flexbox,
+                  just good old Tables!
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Background -->
+          <!-- <div class="absolute -z-10 w-full overflow-hidden">
+            <div
+              class="flex flex-col gap-8 items-center justify-start opacity-20 tracking-widest overflow-y-hidden"
+            >
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+              <h2 class="text-8xl font-bold text-slate-300">Portfolio</h2>
+            </div>
+          </div> -->
+        </div>
+
+        <!-- Personal Background Container -->
+        <div
+          class="flex w-full flex-col justify-center items-center mb-12 border-2 border-blue-300"
+        >
+          <!-- Project Cards Container -->
+          <div class="container pl-2">
+            <h2 class="font-display text-4xl md:text-6xl">Portfolio</h2>
+            <h4
+              class="uppercase text-lg tracking-widest font-light text-slate-600 mb-1"
+            >
+              Personal Projects
+            </h4>
+          </div>
+          <div
+            class="p-12 border-2 border-red-200 grid grid-cols-1 gap-4 justify-center items-stretch md:max-w-1/2 sm:grid-cols-2 md:grid-cols-3 px-8 py-12 md:p-12 flex-stretch relative"
+          >
+            <!-- <div class="absolute top-0 left-0 -z-10">
+              <h2 class="font-display text-8xl">Portfolio</h2>
+            </div> -->
             <!-- Project Card 1 -->
-            <div class="border-2 border-green-300"></div>
-            <!-- Project Card 1 -->
-            <div class="border-2 border-green-300"></div>
+            <a
+              href="#projects"
+              class="border-2 border-green-300 flex flex-col items-center justify-start"
+            >
+              <!-- Project Thumbnail -->
+              <div class="">
+                <img
+                  src="assets/portfolio/p5-ball.webp"
+                  class="w-full"
+                  alt="p5.js website build project thumbnail"
+                />
+              </div>
+              <!-- Project Desc -->
+              <div class="p-3">
+                <h3 class="font-display text-2xl tracking-wider -mb-1">
+                  Interactive Ball Browser Art
+                </h3>
+                <h4
+                  class="uppercase text-sm tracking-widest font-light text-slate-600 mb-1"
+                >
+                  HTML CSS JS p5.js
+                </h4>
+                <p class="tracking-wider leading-7">
+                  As satisfying as watching a lava-lamp, this code is not my
+                  own, but try playing around with the ball by moving your
+                  mouse.
+                </p>
+              </div>
+            </a>
+            <!-- Project Card 2 -->
+            <a
+              href="#projects"
+              class="border-2 border-green-300 flex flex-col items-center justify-start"
+            >
+              <!-- Project Thumbnail -->
+              <div class="">
+                <img
+                  src="assets/portfolio/p5-bubbles.webp"
+                  class="w-full"
+                  alt="p5.js blob website build project thumbnail"
+                />
+              </div>
+              <!-- Project Desc -->
+              <div class="p-3">
+                <h3 class="font-display text-2xl tracking-wider -mb-1">
+                  Interactive Blob Browser Art
+                </h3>
+                <h4
+                  class="uppercase text-sm tracking-widest font-light text-slate-600 mb-1"
+                >
+                  HTML CSS JS p5.js
+                </h4>
+                <p class="tracking-wider leading-7">
+                  This code is not my own, fascinating to see what is possible
+                  though! Use your mouse to animate the blobs!
+                </p>
+              </div>
+            </a>
+            <!-- Project Card 3 -->
+            <a
+              href="#projects"
+              class="border-2 border-green-300 flex flex-col items-center justify-start"
+            >
+              <!-- Project Thumbnail -->
+              <div class="">
+                <img
+                  src="assets/portfolio/p5-flocking.webp"
+                  class="w-full"
+                  alt="david shiffman flocking simulation website build project thumbnail"
+                />
+              </div>
+              <!-- Project Desc -->
+              <div class="p-3">
+                <h3 class="font-display text-2xl tracking-wider -mb-1">
+                  David Shiffman Flocking Simulation
+                </h3>
+                <h4
+                  class="uppercase text-sm tracking-widest font-light text-slate-600 mb-1"
+                >
+                  HTML CSS JS p5.js
+                </h4>
+                <p class="tracking-wider leading-7">
+                  Looking into how something like this is built with math is
+                  very exciting. Thanks and credit to Daniel Shiffman The Nature
+                  of Code for sharing his amazing work. Here I've played around
+                  with some of the values to create various effects. Click and
+                  drag your mouse to create new objects in the browser window.
+                </p>
+              </div>
+            </a>
+            <!-- Project Card 4 -->
+            <a
+              href="#projects"
+              class="border-2 border-green-300 flex flex-col items-center justify-start"
+            >
+              <!-- Project Thumbnail -->
+              <div class="">
+                <img
+                  src="assets/portfolio/wipeout.webp"
+                  class="w-full"
+                  alt="wipeout e-commerce website build project thumbnail"
+                />
+              </div>
+              <!-- Project Desc -->
+              <div class="p-3">
+                <h3 class="font-display text-2xl tracking-wider -mb-1">
+                  Wipeout E-commerce Site
+                </h3>
+                <h4
+                  class="uppercase text-sm tracking-widest font-light text-slate-600 mb-1"
+                >
+                  HTML - CSS - JS
+                </h4>
+                <p class="tracking-wider leading-7">
+                  One of my big web dev ambitions, build my own e-commerce site,
+                  here's a sneak peak of the build so far.
+                </p>
+              </div>
+            </a>
           </div>
 
           <!-- Background -->
@@ -328,6 +896,8 @@
         </div>
         <!-- Projects background -->
       </section>
+
+      <!-- Contact Section -->
       <section
         id="contact"
         class="min-h-screen flex items-center justify-center relative"

@@ -35,7 +35,8 @@ contains:
 
   -- Components
   -- Triple Product Cards
-  -- Product Card
+  -- Product Card - Reusable responsive product card with tailwind animation
+
   -- Login Modal
 
 - HTML CSS - Jonas Schmedtman
