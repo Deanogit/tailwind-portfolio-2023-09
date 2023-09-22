@@ -123,5 +123,11 @@ contains:
 -- Each site needs hosting on netlify.app
 -- Clean up all the code for github
 
--- Build mobile Nav
+-- Build mobile Nav -- complete 1700
 -- Improve Contact section with fonts
+
+## Friday - 22/09/23
+
+-- Init git repos for projects
+-- Push projects to github
+-- Update favicons
