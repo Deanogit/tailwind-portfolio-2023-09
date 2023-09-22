@@ -37,21 +37,21 @@ mobiles.forEach((mobile) => {
 
 tailBtn.addEventListener('click', function () {
   tailBtn.classList.toggle('hidden');
-  tailBtnLess.classList.toggle('hidden');
-  tailBtnLess.classList.toggle('flex');
+  // tailBtnLess.classList.toggle('hidden');
+  // tailBtnLess.classList.toggle('flex');
   tails.forEach((tail) => {
     tail.classList.toggle('hidden');
     tail.classList.toggle('flex');
   });
 });
 
-tailBtnLess.addEventListener('click', function () {
-  tailBtnLess.classList.toggle('hidden');
-  tailBtnLess.classList.toggle('flex');
-  tailBtn.classList.toggle('flex');
-  tailBtn.classList.toggle('hidden');
-  tails.forEach((tail) => {
-    tail.classList.toggle('hidden');
-    tail.classList.toggle('flex');
-  });
-});
+// tailBtnLess.addEventListener('click', function () {
+//   tailBtnLess.classList.toggle('hidden');
+//   tailBtnLess.classList.toggle('flex');
+//   tailBtn.classList.toggle('flex');
+//   tailBtn.classList.toggle('hidden');
+//   tails.forEach((tail) => {
+//     tail.classList.toggle('hidden');
+//     tail.classList.toggle('flex');
+//   });
+// });
