@@ -4,7 +4,9 @@ const menu = document.querySelector('#menu');
 const mobiles = document.querySelectorAll('.mobile');
 const tailBtn = document.querySelector('.tail-btn');
 const tails = document.querySelectorAll('.tail-more');
-const tailBtnLess = document.querySelector('.tail-btn-less');
+// const tailBtnLess = document.querySelector('.tail-btn-less');
+const htmlBtn = document.querySelector('.html-btn');
+const htmls = document.querySelectorAll('.html-more');
 
 menuBtn.addEventListener('click', function () {
   menuBtn.classList.toggle('flex');
@@ -55,3 +57,14 @@ tailBtn.addEventListener('click', function () {
 //     tail.classList.toggle('flex');
 //   });
 // });
+
+// HTML more btn
+
+htmlBtn.addEventListener('click', function () {
+  htmlBtn.classList.toggle('hidden');
+  htmlBtn.classList.toggle('flex');
+  htmls.forEach((html) => {
+    html.classList.toggle('hidden');
+    html.classList.toggle('flex');
+  });
+});
