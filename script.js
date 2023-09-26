@@ -68,3 +68,9 @@ htmlBtn.addEventListener('click', function () {
     html.classList.toggle('flex');
   });
 });
+
+// Set current year
+const yearEl = document.querySelector('.year');
+const currentYear = new Date().getFullYear();
+console.log(currentYear);
+yearEl.textContent = currentYear;

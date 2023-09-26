@@ -41,10 +41,10 @@
             <a href="#">Home</a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
           </li>
           <li>
             <a href="#contact">Contact</a>
@@ -76,8 +76,8 @@
         class="absolute top-0 bottom-0 left-0 hidden md:hidden flex-col self-end w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-slate-700 uppercase bg-slate-50"
       >
         <a href="#" class="mobile">Home</a>
-        <a href="#about" class="mobile">About</a>
         <a href="#projects" class="mobile">Porfolio</a>
+        <a href="#about" class="mobile">About</a>
         <a href="#contact" class="mobile">Contact</a>
       </div>
 
@@ -893,8 +893,8 @@
           <!-- Contact Container -->
           <div class="flex flex-col items-center justify-center">
             <form
-              class="cta-form flex flex-col items-start justify-center gap-3 bg-yellow-300 p-12 shadow-lg m-3 rounded-sm"
-              name="sign-up"
+              class="flex flex-col items-start justify-center gap-3 bg-yellow-300 p-12 shadow-lg m-3 rounded-sm"
+              name="contact"
               netlify
             >
               <h3 class="font-semibold text-lg">Let's get in touch</h3>
@@ -921,7 +921,7 @@
                   class="w-full mt-1 p-2"
                 />
               </div>
-              <div>
+              <div class="w-full">
                 <label for="select-where" class=""
                   >Where did you hear about Dean?</label
                 >
@@ -933,11 +933,24 @@
                 >
                   <option value="">Please choose one option:</option>
                   <option value="friends">Friends and family</option>
-                  <option value="youtube">Search Engine</option>
-                  <option value="podcast">Advert</option>
-                  <option value="ad">Facebook ad</option>
+                  <option value="search">Search Engine</option>
+                  <option value="advert">Advert</option>
+                  <option value="facead">Facebook ad</option>
                   <option value="other">Other</option>
                 </select>
+              </div>
+              <div class="">
+                <label for="question"
+                  >Do you have a question you'd like to ask?</label
+                >
+                <textarea
+                  class="w-full mt-1 p-2"
+                  name="question"
+                  id="question"
+                  cols="40"
+                  rows="5"
+                  placeholder="What would you like to discuss..."
+                ></textarea>
               </div>
 
               <button
@@ -953,7 +966,7 @@
     <footer
       class="p-6 mb-6 flex flex-col items-center justify-center text-slate-500"
     >
-      <h6>Copyright Dean Howe</h6>
+      <h6>Copyright <span class="year"></span> Dean Howe</h6>
     </footer>
     <script src="script.js"></script>
   </body>
