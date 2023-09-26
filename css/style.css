@@ -1086,6 +1086,10 @@ video {
   font-weight: 600;
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -1236,5 +1240,17 @@ video {
 
   .md\:tracking-normal {
     letter-spacing: 0em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:gap-20 {
+    gap: 5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:gap-28 {
+    gap: 7rem;
   }
 }
