@@ -865,6 +865,24 @@
         </div>
       </section>
 
+      <!-- About Section -->
+      <section
+        id="about"
+        class="min-h-screen flex items-center justify-center relative"
+      >
+        <!-- Background Container -->
+        <div class="flex w-full flex-col justify-center items-center">
+          <!-- Contact Container -->
+          <div class="flex flex-col items-center justify-center">
+            <h3 class="font-display text-2xl tracking-wider -mb-2">About</h3>
+            <h4 class="tracking-wider leading-7 p-12 max-w-lg">
+              Dean is a self motivated code newbie with a bachelors in Fine
+              Arts. He is currently searching for opportunities to gain industry
+              experience.
+            </h4>
+          </div>
+        </div>
+      </section>
       <!-- Contact Section -->
       <section
         id="contact"
@@ -874,7 +892,60 @@
         <div class="flex w-full flex-col justify-center items-center">
           <!-- Contact Container -->
           <div class="flex flex-col items-center justify-center">
-            <h3>Contact Dean</h3>
+            <form
+              class="cta-form flex flex-col items-start justify-center gap-3 bg-yellow-300 p-12 shadow-lg m-3 rounded-sm"
+              name="sign-up"
+              netlify
+            >
+              <h3 class="font-semibold text-lg">Let's get in touch</h3>
+              <!-- this is the form element, putting netlify there links the form to netlify's api, very cool -->
+              <div class="w-full">
+                <label for="full-name" class="mr-3 w-1/3">Full Name</label>
+                <input
+                  id="full-name"
+                  type="text"
+                  placeholder="Jane Smith"
+                  name="full-name"
+                  required
+                  class="w-full mt-1 p-2"
+                />
+              </div>
+              <div class="w-full">
+                <label for="email" class="">Email address</label>
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="me@example.com"
+                  class="w-full mt-1 p-2"
+                />
+              </div>
+              <div>
+                <label for="select-where" class=""
+                  >Where did you hear about Dean?</label
+                >
+                <select
+                  name="select-where"
+                  id="select-where"
+                  required
+                  class="w-full mt-1 p-2"
+                >
+                  <option value="">Please choose one option:</option>
+                  <option value="friends">Friends and family</option>
+                  <option value="youtube">Search Engine</option>
+                  <option value="podcast">Advert</option>
+                  <option value="ad">Facebook ad</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <button
+                class="btn btn--form bg-slate-900 text-slate-50 py-4 w-full rounded-sm px-16 mt-3 shadow-lg font-semibold text-lg tracking-wider"
+              >
+                Submit
+              </button>
+            </form>
           </div>
         </div>
       </section>
